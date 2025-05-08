@@ -1,6 +1,4 @@
 import { useEffect, useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import axios from 'axios'
 
@@ -13,12 +11,9 @@ function App() {
       console.log(result);
 
       if(result.status == 200){
-        setData(result.data.products)
-        
-
+        setData(result.data.products) 
       }else{
-        console.log("error for fetching data");
-        
+        console.log("error for fetching data");       
       }
       
     } catch (error) {
@@ -55,7 +50,6 @@ function App() {
           <div>no products...</div>
         )
       }
-
     </div>
      
     </>
